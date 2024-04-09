@@ -1,0 +1,37 @@
+.box-shadow-button {
+    display: block;
+}
+.nav {
+    height: 0px;
+    transition: 0.2s;
+}
+
+.nav.show {
+    height: 110px;
+}
+
+.opacity {
+    opacity: 1;
+    transition: all 0.2s;
+}
+
+.opacity.hide {
+    opacity: 0;
+}
+
+.card {
+    overflow: hidden;
+}
+.card .layer {
+    background-color: #00c9af61;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.card:hover .layer {
+    opacity: 1;
+}
