@@ -1,3 +1,9 @@
+import ProductDetail from "@/ui/pages/ProductDetail";
+
 export default function Page() {
-  return <h1>Suit Page</h1>;
+  return (
+    <div>
+      <ProductDetail typeProduct="suit" />
+    </div>
+  );
 }

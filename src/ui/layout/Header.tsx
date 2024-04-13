@@ -1,15 +1,13 @@
 "use client";
 
-import Image from "next/image";
-import Logo from "../../../public/Logo.png";
-import { fontlogo } from "../font";
 import { clsx } from "clsx";
 import { Bars3CenterLeftIcon } from "@heroicons/react/16/solid";
 import { useState } from "react";
 import style from "@/app/component.module.css";
 import NavBarMobile from "../components/NavBarMobile";
-import Link from "next/link";
+
 import NavBarDesktop from "../components/NavBarDesktop";
+import LogoGroup from "../components/Logo";
 
 export default function Header() {
   let [activeNav, setActiveNav] = useState(false);
@@ -30,17 +28,7 @@ export default function Header() {
             className={clsx("w-8 cursor-pointer md:hidden")}
             onClick={handleOpenMenu}
           />
-          <Link href="/">
-            <Image
-              src={Logo}
-              alt="Logo Hentori Bespoke"
-              width={50}
-              height={50}
-            />
-          </Link>
-          <h1 className={clsx(fontlogo.className, "text-2xl")}>
-            Hentori Bespoke
-          </h1>
+          <LogoGroup />
         </div>
         {/* Nav Bar Mobile*/}
         <div

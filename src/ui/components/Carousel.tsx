@@ -31,7 +31,7 @@ export default function Carousel() {
             <div className="flex flex-row justify-center overflow-hidden">
               <img
                 className="block w-full md:w-full"
-                src={`/carousel-${value}.jpg`}
+                src={`/carousel/carousel-${value}.jpg`}
                 alt={`hentori image ${value}`}
               />
             </div>

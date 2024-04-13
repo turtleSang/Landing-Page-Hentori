@@ -1,3 +1,5 @@
+import ProductDetail from "@/ui/layout/ProductDetail.Layout";
+
 export default function Page() {
-  return <h1>Trousers Page</h1>;
+  return <ProductDetail />;
 }

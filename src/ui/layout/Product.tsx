@@ -14,7 +14,12 @@ export default function Product() {
       </div>
       <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
         {listProduct.map((value) => (
-          <CarProduct key={value.name} link={value.link} name={value.name} />
+          <CarProduct
+            key={value.name}
+            linkImg={value.linkImg}
+            link={value.link}
+            name={value.name}
+          />
         ))}
       </div>
     </section>

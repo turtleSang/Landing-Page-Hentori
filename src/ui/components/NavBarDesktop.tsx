@@ -28,7 +28,7 @@ export default function NavBarDesktop() {
             href={value.link}
             onClick={() => handleActiveItem(value.link)}
             className={clsx(
-              "hover:text-letter-light duration-200",
+              "lg:text-xl hover:text-letter-light duration-200",
               checkActive && "text-letter-light"
             )}
           >

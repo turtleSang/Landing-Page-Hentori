@@ -1,10 +1,8 @@
 import { Allerta_Stencil, Montserrat } from "next/font/google"
 
-const fontlogo = Allerta_Stencil({
-    weight: ["400"],
-    subsets: ["latin"]
-})
+const fontlogo = Allerta_Stencil({ subsets: ["latin"], weight: ["400"], display: "swap" })
 const fontNormal = Montserrat({
+    display: "swap",
     subsets: ["vietnamese"]
 })
 

@@ -2,8 +2,12 @@ import style from "@/app/component.module.css";
 import clsx from "clsx";
 import Link from "next/link";
 
-export default function CardProduct(props: { name: string; link: string }) {
-  let { name, link } = props;
+export default function CardProduct(props: {
+  name: string;
+  link: string;
+  linkImg: string;
+}) {
+  let { name, link, linkImg } = props;
   return (
     <Link href={`/product/${link}`} className="block w-full">
       <div
@@ -12,11 +16,7 @@ export default function CardProduct(props: { name: string; link: string }) {
           style.card
         )}
       >
-        <img
-          src={`/product-${link}.jpg`}
-          alt="Áo sơ mi Hentori"
-          className="block"
-        />
+        <img src={linkImg} alt="Áo sơ mi Hentori" className="block" />
         <h2 className="absolute py-3 bottom-0 text-xl w-full text-center text-letter-light">
           {name}
         </h2>

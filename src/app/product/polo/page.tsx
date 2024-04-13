@@ -1,3 +1,5 @@
+import ProductDetail from "@/ui/pages/ProductDetail";
+
 export default function Page() {
-  return <h1>Polo Page</h1>;
+  return <ProductDetail typeProduct="polo" />;
 }

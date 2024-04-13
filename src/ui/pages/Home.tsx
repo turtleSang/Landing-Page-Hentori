@@ -1,5 +1,6 @@
 import Carousel from "../components/Carousel";
 import CarouselContent from "../components/CarouselContent";
+import Customers from "../layout/Customers";
 import Process from "../layout/Process";
 import Product from "../layout/Product";
 
@@ -13,6 +14,7 @@ export default function HomePage() {
         </div>
       </div>
       <Product />
+      <Customers />
       <Process />
     </>
   );

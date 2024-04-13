@@ -4,20 +4,46 @@
 
 /* Customize Swipper */
 .swiper-pagination-bullet {
-    background-color: white !important;
+    background-color: #b7db4b !important;
+    width: 30px !important;
+    border-radius: 2px !important;
 }
 
 .swiper-button-prev {
-    color: white !important;
+    color: #99b546 !important;
 }
 .swiper-button-next {
-    color: white !important;
+    color: #99b546 !important;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: #8f714b;
+    border-radius: 2px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #b7db4b;
+}
+
 @media screen and (max-width: 640px) {
     .swiper-button-prev {
-        color: white !important;
+        color: #99b546 !important;
     }
     .swiper-button-next {
-        color: white !important;
+        color: #99b546 !important;
     }
 }
