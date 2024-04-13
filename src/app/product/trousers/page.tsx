@@ -1,5 +1,5 @@
-import ProductDetail from "@/ui/layout/ProductDetail.Layout";
+import ProductDetail from "@/ui/pages/ProductDetail";
 
 export default function Page() {
-  return <ProductDetail />;
+  return <ProductDetail typeProduct="trousers" />;
 }

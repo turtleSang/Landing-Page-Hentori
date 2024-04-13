@@ -7,11 +7,18 @@ export default function ProductDetail(props: { typeProduct: string }) {
   if (!product) {
     return <h1>Not Found</h1>;
   }
-  let { listLinkImg } = product;
+
+  let { listLinkImg, description, name, price, timeDescription } = product;
+  let info: {
+    description: string;
+    name: string;
+    price: string;
+    timeDescription: string;
+  } = { description, name, price, timeDescription };
 
   return (
     <>
-      <ProductDetailLayout listLinkImg={listLinkImg} />
+      <ProductDetailLayout listLinkImg={listLinkImg} info={info} />
     </>
   );
 }

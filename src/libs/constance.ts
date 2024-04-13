@@ -107,7 +107,14 @@ export const listProductDetail: Product[] = [
                 linkImg: "/product/shirt/shirt-3.jpg",
                 des: "Hentori shirt"
             },
-        ]
+        ],
+        name: "Áo sơ mi",
+        price: "800.000.000",
+        description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis atque
+        ipsam voluptate quasi cumque ducimus sed iste, perferendis nesciunt sint
+        itaque, corporis iusto tenetur. Porro a error eaque consectetur
+        voluptates?`,
+        timeDescription: "Tùy vào vật liệu kiểu dáng thời gian để hoàn thành là 10 ngày"
     },
     {
         type: "polo",
@@ -132,7 +139,14 @@ export const listProductDetail: Product[] = [
                 linkImg: "/product/polo/polo-5.jpg",
                 des: "Hentori polo"
             }
-        ]
+        ],
+        name: "Áo Polo",
+        price: "300.000.000",
+        description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis atque
+        ipsam voluptate quasi cumque ducimus sed iste, perferendis nesciunt sint
+        itaque, corporis iusto tenetur. Porro a error eaque consectetur
+        voluptates?`,
+        timeDescription: "Tùy vào vật liệu kiểu dáng thời gian để hoàn thành là 10 ngày"
     },
     {
         type: "suit",
@@ -149,6 +163,34 @@ export const listProductDetail: Product[] = [
                 linkImg: "/product/suit/suit-3.jpg",
                 des: "Hentori suit"
             }
-        ]
+        ],
+        name: "Suit",
+        price: "8.000.000",
+        description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis atque
+        ipsam voluptate quasi cumque ducimus sed iste, perferendis nesciunt sint
+        itaque, corporis iusto tenetur. Porro a error eaque consectetur
+        voluptates?`,
+        timeDescription: "Tùy vào vật liệu kiểu dáng thời gian để hoàn thành là 10 ngày"
+    },
+    {
+        type: "trousers",
+        listLinkImg: [
+            {
+                linkImg: "/product/trousers/trousers-1.jpg",
+                des: "Hentori trousers"
+            },
+            {
+                linkImg: "/product/trousers/trousers-2.jpg",
+                des: "Hentori trousers"
+            }
+        ],
+        name: "Quần tây",
+        price: "1.000.000",
+        description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis atque
+        ipsam voluptate quasi cumque ducimus sed iste, perferendis nesciunt sint
+        itaque, corporis iusto tenetur. Porro a error eaque consectetur
+        voluptates?`,
+        timeDescription: "Tùy vào vật liệu kiểu dáng thời gian để hoàn thành là 10 ngày"
+
     }
 ]

@@ -12,6 +12,10 @@ export type CardCustomer = {
 export type Product = {
     type: string,
     listLinkImg: LinkImg[],
+    name: string,
+    price: string,
+    description: string,
+    timeDescription: string
 }
 
 export type LinkImg = {
