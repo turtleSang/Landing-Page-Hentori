@@ -4,7 +4,7 @@ import { listProduct } from "@/libs/constance";
 
 export default function Product() {
   return (
-    <section className="py-6">
+    <section className="py-6 wow animate__fadeInUp" data-wow-duration="2s">
       <div className="content mb-6">
         <Title content="SẢN PHẨM" />
         <p className="text-base w-1/2 mx-auto text-center">

@@ -1,0 +1,8 @@
+.footerFixed {
+    transform: translateY(100%);
+    transition: 0.3s;
+}
+
+.footerFixed.show {
+    transform: translateY(0);
+}

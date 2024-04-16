@@ -7,10 +7,10 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import { listCarousel } from "@/libs/constance";
 
 export default function Carousel() {
-  const linkImg = [1, 2, 3, 4];
-
+  let listLink = listCarousel();
   return (
     <div>
       <Swiper
@@ -26,13 +26,13 @@ export default function Carousel() {
         modules={[Navigation, Pagination, Autoplay]}
         className="mySwiper"
       >
-        {linkImg.map((value) => (
-          <SwiperSlide key={value}>
+        {listLink.map((value, index) => (
+          <SwiperSlide key={index}>
             <div className="flex flex-row justify-center overflow-hidden">
               <img
                 className="block w-full md:w-full"
-                src={`/carousel/carousel-${value}.jpg`}
-                alt={`hentori image ${value}`}
+                src={value.linkImg}
+                alt={value.des}
               />
             </div>
           </SwiperSlide>

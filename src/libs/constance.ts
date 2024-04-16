@@ -1,4 +1,6 @@
-import type { CardProcess, Product } from "./defination";
+import type { CardProcess, IntroContent, Product } from "./defination";
+import { faSquareFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faLocationDot, faPhone, faMessage } from "@fortawesome/free-solid-svg-icons";
 
 export const listLinks = [
     {
@@ -45,6 +47,18 @@ export const listProduct = [
     },
 ]
 
+export const listCarousel = () => {
+    let lenght: number[] = [];
+    for (let i = 1; i <= 4; i++) {
+        lenght = [...lenght, i];
+    }
+    let listLink = lenght.map((value) => {
+        return { linkImg: `/carousel/carousel-${value}.jpg`, des: `Hentori Slide Image ${value}` }
+    })
+
+    return listLink;
+}
+
 export const listProcess: CardProcess[] = [
     {
         name: "Bước 1: Tư vấn",
@@ -84,12 +98,11 @@ export const listProcess: CardProcess[] = [
 
 export const listCustomer = () => {
     let list: { imageUrl: string, id: number }[] = [];
-    for (let index = 0; index < 7; index++) {
+    for (let index = 0; index < 12; index++) {
         list = [...list, { imageUrl: `/customers/customers-${index + 1}.jpg`, id: index }];
     }
     return list;
 }
-
 
 export const listProductDetail: Product[] = [
     {
@@ -162,6 +175,18 @@ export const listProductDetail: Product[] = [
             {
                 linkImg: "/product/suit/suit-3.jpg",
                 des: "Hentori suit"
+            },
+            {
+                linkImg: "/product/suit/suit-4.jpg",
+                des: "Hentori suit"
+            },
+            {
+                linkImg: "/product/suit/suit-5.jpg",
+                des: "Hentori suit"
+            },
+            {
+                linkImg: "/product/suit/suit-6.jpg",
+                des: "Hentori suit"
             }
         ],
         name: "Suit",
@@ -182,6 +207,14 @@ export const listProductDetail: Product[] = [
             {
                 linkImg: "/product/trousers/trousers-2.jpg",
                 des: "Hentori trousers"
+            },
+            {
+                linkImg: "/product/trousers/trousers-3.jpg",
+                des: "Hentori trousers"
+            },
+            {
+                linkImg: "/product/trousers/trousers-4.jpg",
+                des: "Hentori trousers"
             }
         ],
         name: "Quần tây",
@@ -192,5 +225,69 @@ export const listProductDetail: Product[] = [
         voluptates?`,
         timeDescription: "Tùy vào vật liệu kiểu dáng thời gian để hoàn thành là 10 ngày"
 
+    }
+]
+
+export const infoLink = [
+    {
+        content: "Facebook",
+        link: "https://www.facebook.com/Hentoribespoke.suitmaydo.thudaumot",
+        icon: faSquareFacebook,
+        type: "Facebook"
+    },
+    {
+        content:
+            "Số 39 đường Hoàng Văn Thụ, phường Chánh Nghĩa, thành phố Thủ Dầu Một, tỉnh Bình Dương",
+        link: "https://maps.app.goo.gl/SaSxV3199EbSxuHj8",
+        icon: faLocationDot,
+        type: "Địa chỉ"
+    },
+    {
+        content: "0388858682",
+        link: "callto:0388858682",
+        icon: faPhone,
+        type: "Điện thoại"
+    },
+    {
+        content: "Zalo",
+        link: "https://zalo.me/0388858682",
+        icon: faMessage,
+        type: "Zalo"
+    }
+];
+
+export const introConentList: IntroContent[] = [
+    {
+        title: "Giới Thiệu",
+        content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+        accusantium cupiditate facilis at ullam eos maxime rerum, quasi
+        aspernatur repellendus error nostrum a nesciunt. Inventore placeat
+        exercitationem soluta aliquid? Nam.`,
+        linkImg: {
+            linkImg: "/intro/intro-1.jpg",
+            des: "Giới thiệu Hentori Bespoke"
+        }
+    },
+    {
+        title: "Mục tiêu",
+        content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+        accusantium cupiditate facilis at ullam eos maxime rerum, quasi
+        aspernatur repellendus error nostrum a nesciunt. Inventore placeat
+        exercitationem soluta aliquid? Nam.`,
+        linkImg: {
+            linkImg: "/intro/intro-2.jpg",
+            des: "Giới thiệu Hentori Bespoke"
+        }
+    },
+    {
+        title: "Bla Bla",
+        content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+        accusantium cupiditate facilis at ullam eos maxime rerum, quasi
+        aspernatur repellendus error nostrum a nesciunt. Inventore placeat
+        exercitationem soluta aliquid? Nam.`,
+        linkImg: {
+            linkImg: "/intro/intro-3.jpg",
+            des: "Giới thiệu Hentori Bespoke"
+        }
     }
 ]

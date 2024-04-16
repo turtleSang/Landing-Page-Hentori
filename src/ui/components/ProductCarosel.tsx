@@ -14,7 +14,8 @@ import clsx from "clsx";
 import { LinkImg, Product } from "@/libs/defination";
 
 export default function ProductCarousel(props: { listLinkImg: LinkImg[] }) {
-  const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  let a: any;
+  const [thumbsSwiper, setThumbsSwiper] = useState(a);
 
   let { listLinkImg } = props;
 

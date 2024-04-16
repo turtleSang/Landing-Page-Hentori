@@ -3,7 +3,7 @@ import Title from "../components/Title";
 
 export default function Process() {
   return (
-    <section>
+    <section className="mb-6">
       <div className="title mb-6">
         <Title content="QUY TRÌNH CỦA CHÚNG TÔI" />
         <p className="px-6 text-center">

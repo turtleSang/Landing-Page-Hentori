@@ -1,3 +1,5 @@
+import IntroPage from "@/ui/pages/IntoPage";
+
 export default function Page() {
-  return <h1>Info Page</h1>;
+  return <IntroPage />;
 }

@@ -35,3 +35,41 @@
 .card:hover .layer {
     opacity: 1;
 }
+
+.imgIntroLeft {
+    position: relative;
+}
+
+.imgIntroLeft::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(0deg, rgba(3, 1, 0, 1) 6%, rgba(0, 0, 0, 0) 88%);
+}
+
+.imgIntroRight {
+    position: relative;
+}
+.imgIntroRight::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(0deg, rgba(143, 113, 75, 1) 6%, rgba(0, 0, 0, 0) 88%);
+}
+
+@media screen and (min-width: 768px) {
+    .imgIntroLeft::after {
+        background: linear-gradient(90deg, rgba(193, 133, 33, 0) 29%, rgba(0, 0, 0, 1) 88%);
+    }
+    .imgIntroRight::after {
+        background: linear-gradient(90deg, rgba(143, 113, 75, 1) 6%, rgba(0, 0, 0, 0) 88%);
+    }
+}

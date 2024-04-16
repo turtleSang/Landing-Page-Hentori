@@ -22,3 +22,9 @@ export type LinkImg = {
     linkImg: string,
     des: string
 }
+
+export type IntroContent = {
+    linkImg: LinkImg,
+    title: string,
+    content: string,
+}

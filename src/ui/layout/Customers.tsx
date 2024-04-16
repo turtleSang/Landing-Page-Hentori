@@ -13,7 +13,7 @@ export default function Customers() {
   let list = listCustomer();
 
   return (
-    <div className="py-6">
+    <div className="py-6 wow animate__fadeInUp" data-wow-duration="2s">
       <div className="title mb-6">
         <Title content="Khách hàng của Hentori" />
         <p className="px-5 text-center text-letter-dark">

@@ -11,7 +11,7 @@ import "swiper/css/pagination";
 
 export default function CarouselProcess() {
   return (
-    <div className="px-9">
+    <div className="px-9 wow animate__fadeInRight" data-wow-duration="2s">
       <Swiper
         autoHeight={true}
         slidesPerView={1}
