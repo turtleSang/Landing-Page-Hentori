@@ -17,17 +17,25 @@ export default function Customers() {
       <div className="title mb-6">
         <Title content="Khách hàng của Hentori" />
         <p className="px-5 text-center text-letter-dark">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-          temporibus quod eligendi iusto obcaecati ipsa maxime aut, odio a
-          veniam.
+          Luôn đặt trải nghiệm của khách hàng lên hàng đầu. Niềm vui và sự hài
+          lòng của bạn là động lực để chúng tôi không ngừng hoàn thiện và phát
+          triển.
+          <br />
+          Chúng tôi luôn hướng tới là một người bạn đồng hành tư vấn trang phục
+          đến tất cả khách hàng
         </p>
       </div>
       <Swiper
-        slidesPerView={3}
+        slidesPerView={2}
         spaceBetween={30}
         freeMode={true}
         loop={true}
         grabCursor={true}
+        breakpoints={{
+          768: {
+            slidesPerView: 4,
+          },
+        }}
         pagination={{
           clickable: true,
         }}
@@ -40,7 +48,7 @@ export default function Customers() {
       >
         {list.map((item) => (
           <SwiperSlide key={item.id}>
-            <Link href="/product">
+            <Link href="/san-pham">
               <img src={item.imageUrl} alt="Khách hàng Hentori" />
             </Link>
           </SwiperSlide>

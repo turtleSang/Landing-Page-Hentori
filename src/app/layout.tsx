@@ -1,6 +1,7 @@
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { Metadata } from "next";
+import Script from "next/script";
 // CSS
 import "animate.css";
 import "@/app/global.css";
@@ -31,8 +32,6 @@ export default function RootLayout({
         {children}
         <Footer />
         <Contact />
-        <script src="js/wow.min.js" async></script>
-        <script async>new WOW().init();</script>
       </body>
     </html>
   );

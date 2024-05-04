@@ -9,10 +9,9 @@ export default function InfoFooter() {
       <div>
         <LogoGroup />
         <p className="text-sm text-letter-dark">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-          veritatis similique dicta explicabo? Esse ipsam consectetur ab aut,
-          blanditiis sit beatae dignissimos alias, non aspernatur voluptates
-          quod saepe corporis deleniti.
+          Hentori Bespoke - Thương hiệu âu phục may đo cao cấp từ năm 2017. Chất
+          liệu nhập khẩu, thiết kế tinh tế, dịch vụ chuyên nghiệp. Khẳng định
+          phong cách, chinh phục thành công!
         </p>
       </div>
       <div className="flex flex-col items-start justify-around text-letter-dark underline my-3">

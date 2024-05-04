@@ -12,7 +12,7 @@ export default function ProductDetailLayout(props: {
   };
 }) {
   return (
-    <div className="w-10/12 mx-auto grid grid-cols-1 md:grid-cols-2 gap-5">
+    <div className="w-10/12 mx-auto mb-8 grid grid-cols-1 md:grid-cols-2 gap-5">
       <div>
         <ProductCarousel listLinkImg={props.listLinkImg} />
       </div>

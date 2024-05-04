@@ -9,7 +9,7 @@ export default function CardProduct(props: {
 }) {
   let { name, link, linkImg } = props;
   return (
-    <Link href={`/product/${link}`} className="block w-full">
+    <Link href={`/san-pham/${link}`} className="block w-full">
       <div
         className={clsx(
           "cursor-pointer border-1 border-black rounded-md relative",

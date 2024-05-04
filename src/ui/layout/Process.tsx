@@ -7,9 +7,9 @@ export default function Process() {
       <div className="title mb-6">
         <Title content="QUY TRÌNH CỦA CHÚNG TÔI" />
         <p className="px-6 text-center">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nemo
-          voluptatibus saepe odio laborum iure culpa corporis minima aliquid
-          hic.
+          Với quy trình chuyên nghiệp và đội ngũ tay nghề cao, Hentori Bespoke
+          cam kết mang đến cho bạn những bộ suit hoàn hảo, đẳng cấp và tôn lên
+          phong cách riêng biệt.
         </p>
       </div>
       <CarouselProcess />

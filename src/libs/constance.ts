@@ -9,28 +9,28 @@ export const listLinks = [
     },
     {
         name: "Giới thiệu",
-        link: "/info",
+        link: "/gioi-thieu",
     },
     {
         name: "Sản phẩm",
-        link: "/product",
+        link: "/san-pham",
     },
     {
         name: "Liên hệ tư vấn",
-        link: "/booking",
+        link: "/lien-he",
     },
 ];
 
 export const listProduct = [
     {
         name: "Sơ mi",
-        link: "shirt",
+        link: "so-mi",
         linkImg: "/product-shirt.jpg"
 
     },
     {
         name: "Quần Tây",
-        link: "trousers",
+        link: "quan",
         linkImg: "/product-trousers.jpg"
     },
     {
@@ -98,7 +98,7 @@ export const listProcess: CardProcess[] = [
 
 export const listCustomer = () => {
     let list: { imageUrl: string, id: number }[] = [];
-    for (let index = 0; index < 12; index++) {
+    for (let index = 0; index < 10; index++) {
         list = [...list, { imageUrl: `/customers/customers-${index + 1}.jpg`, id: index }];
     }
     return list;
@@ -244,7 +244,7 @@ export const infoLink = [
     },
     {
         content: "0388858682",
-        link: "callto:0388858682",
+        link: "tel:0388858682",
         icon: faPhone,
         type: "Điện thoại"
     },
@@ -258,33 +258,26 @@ export const infoLink = [
 
 export const introConentList: IntroContent[] = [
     {
-        title: "Giới Thiệu",
-        content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
-        accusantium cupiditate facilis at ullam eos maxime rerum, quasi
-        aspernatur repellendus error nostrum a nesciunt. Inventore placeat
-        exercitationem soluta aliquid? Nam.`,
+        title: "Nơi khơi nguồn phong cách quý ông đích thực",
+        content: `Từ năm 2017, Hentori Bespoke đã khẳng định vị thế thương hiệu âu phục may đo cao cấp tại Bình Dương. 
+        Chúng tôi mang đến cho quý khách hàng những bộ suit hoàn hảo, được may đo tỉ mỉ theo từng đường cắt, từng chi tiết, 
+        tôn vinh sự sang trọng và đẳng cấp của phái mạnh`,
         linkImg: {
             linkImg: "/intro/intro-1.jpg",
             des: "Giới thiệu Hentori Bespoke"
         }
     },
     {
-        title: "Mục tiêu",
-        content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
-        accusantium cupiditate facilis at ullam eos maxime rerum, quasi
-        aspernatur repellendus error nostrum a nesciunt. Inventore placeat
-        exercitationem soluta aliquid? Nam.`,
+        title: "Thiết kế tinh tế",
+        content: `Đội ngũ thợ may lành nghề của chúng tôi sở hữu tay nghề cao cùng gu thẩm mỹ tinh tế, tạo nên những bộ suit hoàn hảo, phù hợp với mọi vóc dáng và phong cách`,
         linkImg: {
             linkImg: "/intro/intro-2.jpg",
             des: "Giới thiệu Hentori Bespoke"
         }
     },
     {
-        title: "Bla Bla",
-        content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
-        accusantium cupiditate facilis at ullam eos maxime rerum, quasi
-        aspernatur repellendus error nostrum a nesciunt. Inventore placeat
-        exercitationem soluta aliquid? Nam.`,
+        title: "Được tư vấn chuyên nghiệp",
+        content: `Đội ngũ chuyên viên giàu kinh nghiệm sẽ giúp bạn lựa chọn chất liệu, kiểu dáng, màu sắc phù hợp nhất với vóc dáng và phong cách cá nhân`,
         linkImg: {
             linkImg: "/intro/intro-3.jpg",
             des: "Giới thiệu Hentori Bespoke"
