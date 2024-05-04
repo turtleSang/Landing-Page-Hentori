@@ -1,7 +1,8 @@
 "use client";
 import clsx from "clsx";
 import Header from "./Header";
-import { useEffect, useState } from "react";
+import { FunctionComponent, useEffect, useState } from "react";
+import Contact from "../components/Contact";
 
 export default function FixedHeader() {
   let [active, setActive] = useState(false);
@@ -20,13 +21,23 @@ export default function FixedHeader() {
   }, []);
 
   return (
-    <div
-      className={clsx(
-        "fixed w-full duration-200 z-40",
-        active ? "top-0" : "-top-full"
-      )}
-    >
-      <Header />
-    </div>
+    <>
+      <div
+        className={clsx(
+          "fixed w-full duration-200 z-40",
+          active ? "top-0" : "-top-full"
+        )}
+      >
+        <Header />
+      </div>
+      <div
+        className={clsx(
+          "fixed duration-300 w-full z-40 md:w-16",
+          active ? "bottom-0 md:right-8" : "-bottom-full md:-right-full"
+        )}
+      >
+        <Contact />
+      </div>
+    </>
   );
 }

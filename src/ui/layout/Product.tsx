@@ -1,7 +1,7 @@
+"use client";
 import CarProduct from "../components/CardProduct";
 import Title from "../components/Title";
 import { listProduct } from "@/libs/constance";
-import ReactWOW from "react-wow";
 
 export default function Product() {
   return (

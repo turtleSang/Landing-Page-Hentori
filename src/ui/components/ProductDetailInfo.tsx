@@ -27,7 +27,7 @@ export default function ProductDetailInfo(props: {
       <h3 className="text-1xl font-medium text-letter-dark">Ghi chú</h3>
       <Link
         className="bg-background-2 text-letter-light text-3xl text-center rounded-md py-3 leading-8 font-light duration-300 hover:bg-background-4 hover:text-letter-dark hover:font-semibold"
-        href={"/booking"}
+        href={"/lien-he"}
       >
         Liên hệ tư vấn
       </Link>

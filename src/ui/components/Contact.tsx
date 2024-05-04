@@ -12,7 +12,7 @@ export default function Contact() {
   let [activeMobile, setActiveMobile] = useState(true);
 
   return (
-    <section className="fixed bottom-0 md:right-8 w-full z-50 md:w-16">
+    <section>
       <div className="hidden md:flex flex-col">
         {infoLink.map((value, index) => (
           <Link

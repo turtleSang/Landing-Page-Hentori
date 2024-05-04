@@ -98,7 +98,7 @@ export const listProcess: CardProcess[] = [
 
 export const listCustomer = () => {
     let list: { imageUrl: string, id: number }[] = [];
-    for (let index = 0; index < 10; index++) {
+    for (let index = 0; index < 9; index++) {
         list = [...list, { imageUrl: `/customers/customers-${index + 1}.jpg`, id: index }];
     }
     return list;
@@ -122,11 +122,11 @@ export const listProductDetail: Product[] = [
             },
         ],
         name: "Áo sơ mi",
-        price: "800.000.000",
-        description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis atque
-        ipsam voluptate quasi cumque ducimus sed iste, perferendis nesciunt sint
-        itaque, corporis iusto tenetur. Porro a error eaque consectetur
-        voluptates?`,
+        price: "1.450.000",
+        description: `Áo sơ mi may đo không chỉ đơn thuần là một trang phục, mà còn là biểu tượng cho sự tinh tế, 
+        sang trọng và đẳng cấp của người đàn ông. Khác với những chiếc áo sơ mi mua sẵn được sản xuất hàng loạt, 
+        áo sơ mi may đo được thiết kế và hoàn thiện dựa trên số đo cơ thể và sở thích cá nhân của từng khách hàng, 
+        mang đến sự vừa vặn hoàn hảo và tôn lên vóc dáng một cách tối ưu nhất`,
         timeDescription: "Tùy vào vật liệu kiểu dáng thời gian để hoàn thành là 10 ngày"
     },
     {
@@ -154,11 +154,10 @@ export const listProductDetail: Product[] = [
             }
         ],
         name: "Áo Polo",
-        price: "300.000.000",
-        description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis atque
-        ipsam voluptate quasi cumque ducimus sed iste, perferendis nesciunt sint
-        itaque, corporis iusto tenetur. Porro a error eaque consectetur
-        voluptates?`,
+        price: "860.000",
+        description: `Áo thun Polo không chỉ là một item thời trang basic quen thuộc mà còn là biểu tượng cho sự trẻ trung,
+         năng động và cá tính. Tuy nhiên, để sở hữu một chiếc áo Polo thực sự vừa vặn, thoải mái và tôn lên vóc dáng, 
+         việc lựa chọn may đo là giải pháp hoàn hảo nhất?`,
         timeDescription: "Tùy vào vật liệu kiểu dáng thời gian để hoàn thành là 10 ngày"
     },
     {
@@ -190,11 +189,10 @@ export const listProductDetail: Product[] = [
             }
         ],
         name: "Suit",
-        price: "8.000.000",
-        description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis atque
-        ipsam voluptate quasi cumque ducimus sed iste, perferendis nesciunt sint
-        itaque, corporis iusto tenetur. Porro a error eaque consectetur
-        voluptates?`,
+        price: "12.000.000",
+        description: `Suit không chỉ là trang phục dành cho những dịp quan trọng mà còn là biểu tượng cho sự thành công, 
+        đẳng cấp và quyền lực của người đàn ông. Tuy nhiên, để sở hữu một bộ Suit thực sự vừa vặn, 
+        tôn dáng và thể hiện đẳng cấp, việc lựa chọn may đo là giải pháp hoàn hảo nhất.`,
         timeDescription: "Tùy vào vật liệu kiểu dáng thời gian để hoàn thành là 10 ngày"
     },
     {
@@ -218,11 +216,10 @@ export const listProductDetail: Product[] = [
             }
         ],
         name: "Quần tây",
-        price: "1.000.000",
-        description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis atque
-        ipsam voluptate quasi cumque ducimus sed iste, perferendis nesciunt sint
-        itaque, corporis iusto tenetur. Porro a error eaque consectetur
-        voluptates?`,
+        price: "1.450.000",
+        description: `Quần tây là một item không thể thiếu trong tủ đồ của mỗi quý ông. Tuy nhiên, 
+        để sở hữu một chiếc quần tây thực sự vừa vặn, tôn dáng và đẳng cấp, việc lựa chọn may đo 
+        là giải pháp hoàn hảo nhất.`,
         timeDescription: "Tùy vào vật liệu kiểu dáng thời gian để hoàn thành là 10 ngày"
 
     }
@@ -230,7 +227,7 @@ export const listProductDetail: Product[] = [
 
 export const infoLink = [
     {
-        content: "Facebook",
+        content: "Hentori Bespoke",
         link: "https://www.facebook.com/Hentoribespoke.suitmaydo.thudaumot",
         icon: faSquareFacebook,
         type: "Facebook"
@@ -249,7 +246,7 @@ export const infoLink = [
         type: "Điện thoại"
     },
     {
-        content: "Zalo",
+        content: "0388858682",
         link: "https://zalo.me/0388858682",
         icon: faMessage,
         type: "Zalo"

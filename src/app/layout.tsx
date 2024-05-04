@@ -31,7 +31,7 @@ export default function RootLayout({
         <FixedHeader />
         {children}
         <Footer />
-        <Contact />
+        {/* <Contact /> */}
       </body>
     </html>
   );

@@ -1,3 +1,5 @@
+import BookingPage from "@/ui/pages/BookingPage";
+
 export default function Page() {
-  return <h1>Booking page</h1>;
+  return <BookingPage />;
 }
